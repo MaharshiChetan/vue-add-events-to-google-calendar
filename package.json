@@ -1,6 +1,6 @@
 {
   "name": "vue-add-events-to-google-calendar",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "public": true,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -22,6 +22,10 @@
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
     "vue-template-compiler": "^2.6.10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MaharshiChetan/vue-add-events-to-google-calendar"
   },
   "eslintConfig": {
     "root": true,
