@@ -1,17 +1,36 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <AddToCalendar
+      :buttonText="buttonText"
+      :title="title"
+      :startTime="startTime"
+      :endTime="endTime"
+      :location="location"
+      :details="details"
+    />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import AddToCalendar from './components/AddToCalendar.vue'
 
 export default {
   name: 'app',
+
+  data() {
+    return {
+      buttonText: "Add to calendars",
+      details: "this is testing of add to calendar component",
+      endTime: new Date('11/22/2019 5:00 pm'),
+      location: "ruby tower, dadar",
+      startTime: new Date('11/25/2019 6:00 pm'),
+      title: "Excellencia",
+    }
+  },
+
   components: {
-    HelloWorld
+    AddToCalendar
   }
 }
 </script>

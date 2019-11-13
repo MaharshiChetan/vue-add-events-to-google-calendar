@@ -1,24 +1,35 @@
-# add-to-calendar
+# vue-add-events-to-google-calendar
 
-## Project setup
-```
-npm install
-```
+An Vue component to add events to google calendar.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Installation
 
-### Compiles and minifies for production
-```
-npm run build
-```
+  ```sh
+  npm install vue-add-events-to-google-calendar@latest
+  ```
 
-### Lints and fixes files
-```
-npm run lint
-```
+## Example
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+  ```sh
+  import { AddToCalendar } from 'add-to-calender';
+
+  <AddToCalendar
+      :buttonText: "Add to calendar",
+      :details: "Details of event",
+      :endTime: "new Date('11/22/2019 5:00 pm')",
+      :location: "'mumbai'",
+      :startTime: "new Date('11/25/2019 6:00 pm')",
+      :title: "'Excellencia'",
+    />
+  ```
+
+## Props
+
+|  Prop       |             Description             |  Required
+|  :---       |                :---:                |      ---: |
+|  buttonText |   Text on button                    |  false    |
+|  details    |   Description of the event          |  false    |
+|  endTime    |   End Date and time of the event    |  true     |
+|  location   |   Location of the event             |  false    |
+|  startTime  |   Start date and time of the event  |  true     |
+|  title      |   Title of the event                |  true     |

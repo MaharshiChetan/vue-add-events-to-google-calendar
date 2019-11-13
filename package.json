@@ -1,10 +1,13 @@
 {
-  "name": "add-to-calendar",
-  "version": "0.1.0",
-  "private": true,
+  "name": "vue-add-events-to-google-calendar",
+  "version": "0.0.1",
+  "public": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "build-bundle": "vue-cli-service build --target lib --name calender ./index.js",
+    "build-publish": "npm run build-bundle && npm run publish",
+    "publish": "npm publish --access public",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
